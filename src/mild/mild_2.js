@@ -50,7 +50,7 @@ export function identifyArray(array) {
  */
 export function removeKey(object, key) {
    object.delete(key);
-   return null;
+   return typeof(object);
 }
 
 /**
