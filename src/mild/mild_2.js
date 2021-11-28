@@ -7,7 +7,7 @@
  */
 export function identifyVariable(variable) {
    var type = typeof(variable);
-   return "{ type: '"+type + "', value: "+variable +' }';
+   return "{ type: '"+type + "', value: '"+variable +"' }";
 }
 
 
