@@ -75,8 +75,8 @@ export function countArray(array) {
     }
     var output = "";
     dictionary.forEach(function(value,key) {
-        output += key + ' : ' + value + ',';
+        output += "'" + key + "'" + ' : ' + value + ', ';
     })
-    var a = output.length-1;
+    var a = output.length-2;
     return '{ '+ output.substring(0,a) +' }';
 }
