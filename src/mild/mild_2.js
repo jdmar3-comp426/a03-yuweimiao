@@ -29,7 +29,7 @@ export function identifyArray(array) {
    for(let i = 0; i < array.length; i++) {
       outarray[i] = "{ type: '"+typeof(array[i]) + "', value: '"+array[i] +"' }";
    }
-   return outarray;
+   return outarray[outarray.size];
 }
 
 /**
