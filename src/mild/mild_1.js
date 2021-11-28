@@ -49,7 +49,7 @@ export function maxAndMin(numbers) {
             minnum = numbers[i];
         }
     }
-    return 'min: ' + minnum + ', max: ' +maxnum; 
+    return '{ max: ' + maxnum + ', min: ' +minnum+' }'; 
 
 }
 
