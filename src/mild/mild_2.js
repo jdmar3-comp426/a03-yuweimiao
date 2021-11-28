@@ -56,7 +56,7 @@ export function removeKey(object, key) {
          objectout[a] = object[a];
       }
    }
-   object = {};
+   return objectout;
 }
 
 /**
