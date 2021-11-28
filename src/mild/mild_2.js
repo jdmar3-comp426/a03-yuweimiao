@@ -50,14 +50,13 @@ export function identifyArray(array) {
  */
 export function removeKey(object, key) {
    let objectout = {}; 
-   let b = {};
    for(let i = 0; i < object.length; i++) {
       var a  = object.keyList[i];
       if(a != key) {
          objectout[a] = object[a];
       }
    }
-   object = b;
+   object = {};
 }
 
 /**
