@@ -25,7 +25,11 @@ export function identifyVariable(variable) {
 
  */
 export function identifyArray(array) {
-
+   var outarray = [];
+   for(let i = 0; i < array.length; i++) {
+      outarray[i] = identifyVariable(array[i]);
+   }
+   return outarray;
 }
 
 /**
