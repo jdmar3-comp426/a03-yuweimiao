@@ -76,7 +76,7 @@ export function removeKeyNonDestructive(object, key) {
    //       objectout[a] = object[a];
    //    }
    // }
-   Object.assign(objectout,object);
+   objectout = Object.assign(objectout,object);
    removeKey(objectout,key);
    return objectout;
 
