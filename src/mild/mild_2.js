@@ -49,7 +49,14 @@ export function identifyArray(array) {
  obj now does not contain the `password` field
  */
 export function removeKey(object, key) {
-   object[key]=null;
+   let objectout = {}; 
+   for(let i = 0; i < object.length; i++) {
+      var a  = object.keyList[i];
+      if(a != key) {
+         objectout[a] = object[a];
+      }
+   }
+   object = objectout;
 }
 
 /**
