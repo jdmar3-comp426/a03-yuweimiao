@@ -6,7 +6,8 @@
  * returns: { type: 'number', value: 4 }
  */
 export function identifyVariable(variable) {
-
+   var type = console.log(typeof variable);
+   return "{ type: '"+type + "', value: "+variable;
 }
 
 
