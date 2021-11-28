@@ -70,12 +70,13 @@ export function countArray(array) {
             var a = dictionary.get(array[i]) + 1;
             dictionary.set(array[i],a);
         } else {
-            dictionary.set(array[i],0);
+            dictionary.set(array[i],1);
         }
     }
     var output = "";
     dictionary.forEach(function(value,key) {
         output += key + ' : ' + value + ',';
     })
-    return output;
+    var a = output.length-1;
+    return '{ '+ output.substring(0,a) +' }';
 }
