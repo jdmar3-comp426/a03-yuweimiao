@@ -71,7 +71,7 @@ export function getStatistics(array) {
     }
     variance = variance/len;
     var std = variance**(1/2);
-    return "{length: "+len+", sum: "+sum+", mean: "+mean+", median: "+median+", min: "+min+", max: "+max+", variance: "+variance+", standard_deviation: "+std+"}";
+    return "{ length: "+len+", sum: "+sum+", mean: "+mean+", median: "+median+", min: "+min+", max: "+max+", variance: "+variance+", standard_deviation: "+std+"}";
     //{%0A  length: 12,%0A  sum: 119,%0A  mean: 9.916666666666666,%0A  median: 7,%0A  min: 2,%0A  max: 47,%0A  variance: 133.74305555555557,%0A  standard_deviation: 11.564733267808453%0A}
 }
 
