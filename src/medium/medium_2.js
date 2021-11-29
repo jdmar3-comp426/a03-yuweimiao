@@ -23,12 +23,12 @@ export const allCarStats = {
     avgMpg: function(){
         var avgcity = 0;
         var avghighway = 0;
-        var len = mpg_data.default.length;
+        var len = mpg_data.length;
         for(let i = 0; i < len; i++) {
-           avgcity += mpg_data.default[i][city];
-           avghighway += mpg_data.default[i][highway];
+           avgcity += mpg_data[i][city];
+           avghighway += mpg_data[i][highway];
     } 
-    return avgcity/len+","+avghighway/len; 
+    return "{ city: "+avgcity/len+", highway: "+avghighway/len+" }"; 
     } 
     ,
     allYearStats: undefined,
