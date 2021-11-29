@@ -17,8 +17,7 @@
 export const repeat = (fn, n, ...params) => {
     const arrayout = [];
     for(let i = 0; i<n; i++) {
-        arrayout[0] += typeof(fn(params));
-        arrayout[1] += 'a';
+        arrayout[i] = typeof(fn(params));
     }
     return arrayout;
 };
