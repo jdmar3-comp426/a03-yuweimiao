@@ -15,11 +15,11 @@
  *                from calling the function
  */
 export const repeat = (fn, n, ...params) => {
-    var arrayout = '';
+    var arrayout = [];
     for(let i = 0; i<n; i++) {
-        arrayout = '\nWhat up?';
+        arrayout = fn(params);
     }
-    return ['What up?','What up?','What up?','What up?','What up?'];
+    return arrayout;
 };
 
 
