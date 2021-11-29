@@ -20,13 +20,13 @@ see under the methods section
  * @param {allCarStats.ratioHybrids} ratio of cars that are hybrids
  */
 export const allCarStats = {
-    avgMpg: (city, highway) => {
+    avgMpg: function () {
         var avgcity = 0;
         var avghighway = 0;
         var len = mpg_data.length;
         for (let i = 0; i < len; i++) {
-            avgcity += mpg_data[i].city;
-            avghighway += mpg_data[i].highway;
+            avgcity += mpg_data[i][city];
+            avghighway += mpg_data[i][highway];
         }
         return "{ city: " + avgcity / len + ", highway: " + avghighway / len + " }";
     } 
