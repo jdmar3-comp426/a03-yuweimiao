@@ -179,7 +179,7 @@ export const filter = (arr, test) => {
     for(let k = 0; k < falsearr.length-1; k++) {
         output += falsearr[k]+", ";
     }
-    output += falsearr+" ] }";
+    output += falsearr[falsearr.length-1]+" ] }";
     return output;
 
 };
