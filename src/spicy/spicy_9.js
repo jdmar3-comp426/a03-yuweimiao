@@ -172,13 +172,13 @@ export const filter = (arr, test) => {
     }
     var output = "{ pass: [ ";
     for(let j = 0; j < truearr.length-1; j++) {
-        output += "'"+truearr[j]+"', ";
+        output += truearr[j]+", ";
     }
-    output += "'"+truearr[truearr.length-1] +" ], fail: [ ";
+    output += truearr[truearr.length-1] +" ], fail: [ ";
     for(let k = 0; k < falsearr.length-1; k++) {
         output += "'"+falsearr[k]+"', ";
     }
-    output += "'"+falsearr+" ] }";
+    output += falsearr+" ] }";
     return output;
 
 };
