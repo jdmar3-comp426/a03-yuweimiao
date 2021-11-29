@@ -35,7 +35,7 @@ export function getMedian(array) {
     } else {
         median = arrsort[(len-1)/2];
     }
-    return median;
+    return arrsort;
 }
 
 /**
