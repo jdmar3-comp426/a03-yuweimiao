@@ -17,7 +17,8 @@
 export const repeat = (fn, n, ...params) => {
     const arrayout = [];
     for(let i = 0; i<n; i++) {
-        arrayout[i] = typeof(fn(params));
+        var a = fn(params);
+        arrayout[i] = a.substr(3,10);
     }
     return arrayout;
 };
