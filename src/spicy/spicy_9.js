@@ -175,8 +175,9 @@ export const filter = (arr, test) => {
         output += truearr[j]+", ";
     }
     output += truearr[truearr.length-1] +" ], fail: [ ";
+
     for(let k = 0; k < falsearr.length-1; k++) {
-        output += "'"+falsearr[k]+"', ";
+        output += falsearr[k]+", ";
     }
     output += falsearr+" ] }";
     return output;
