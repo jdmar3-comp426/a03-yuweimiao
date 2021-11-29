@@ -168,11 +168,11 @@ export const filter = (arr, test) => {
             if(i%2 == 0) {
                 falsearr[falsearr.length] = arr[i];
             }
+        }else if(i%2 == 1 && test(arr[i]) != true) {
+            falsearr[falsearr.length] = "'"+arr[i]+"'";
+        } else {
+            truearr[truearr.length] = "'"+arr[i]+"'";
         }
-        if(i%2 == 1 && test(arr[i]) != true) {
-            falsearr[falsearr.length] = arr[i];
-        }
-        truearr[truearr.length] = arr[i];
     }
     return "{ pass: "+truearr+ ", fail: " + falsearr + " }";
 
