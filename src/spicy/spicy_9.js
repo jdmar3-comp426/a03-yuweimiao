@@ -16,7 +16,7 @@
  */
 export const repeat = (fn, n, ...params) => {
     const arrayout = [];
-    var a = fn(params);
+    var a = fn(params).toString();
     for(let i = 0; i<n; i++) {
         arrayout[i] = a;
     }
