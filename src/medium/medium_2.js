@@ -25,8 +25,8 @@ export const allCarStats = {
         var avghighway = 0;
         var len = mpg_data.length;
         for(let i = 0; i < len; i++) {
-           avgcity += mpg_data[i][city];
-           avghighway += mpg_data[i][highway];
+           avgcity += mpg_data[i].city;
+           avghighway += mpg_data[i].highway;
     } 
     return "{ city: "+avgcity/len+", highway: "+avghighway/len+" }"; 
     } 
