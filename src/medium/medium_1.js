@@ -26,13 +26,14 @@ export function getSum(array) {
  * console.log(getMedian(array)); // 4.5
  */
 export function getMedian(array) {
+    var arrsort = [];
     var median= 0;
-    array.sort();
-    var len = array.length;
+    arrsort = array.sort(function(a, b){return a - b});
+    var len = arrsort.length;
     if(len%2 == 0) {
-        median = (array[len/2]+array[(len/2)-1])/2;
+        median = (arrsort[len/2]+arrsort[(len/2)-1])/2;
     } else {
-        median = array[(len-1)/2];
+        median = arrsort[(len-1)/2];
     }
     return median;
 }
@@ -57,13 +58,13 @@ export function getMedian(array) {
  }
  */
 export function getStatistics(array) {
-    array.sort();
+    var arraysort = array.sort(function(a, b){return a - b});
     var len = array.length;
     var sum = getSum(array);
     var mean = sum/len;
     var median = getMedian(array);
-    var min = array[0];
-    var max = array[len-1];
+    var min = arraysort[0];
+    var max = arraysort[len-1];
     var variance = 0;
     for(let i = 0; i < len; i++) {
         variance += (array[i]-mean)**2;
