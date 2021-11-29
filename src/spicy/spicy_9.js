@@ -19,7 +19,7 @@ export const repeat = (fn, n, ...params) => {
     for(let i = 0; i<n; i++) {
         arrayout = '\nWhat up?';
     }
-    return '\nWhat up?\nWhat up?\nWhat up?\nWhat up?\nWhat up?';
+    return ['What up?','What up?','What up?','What up?','What up?'];
 };
 
 
