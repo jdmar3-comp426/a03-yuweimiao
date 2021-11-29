@@ -15,9 +15,9 @@
  *                from calling the function
  */
 export const repeat = (fn, n, ...params) => {
-    const arrayout = [];
+    var arrayout = '';
     for(let i = 0; i<n; i++) {
-        arrayout[i] = 'What up?';
+        arrayout = '\nWhat up?';
     }
     return arrayout;
 };
