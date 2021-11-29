@@ -31,7 +31,7 @@ export function getMedian(array) {
     arrsort = array.sort();
     var len = arrsort.length;
     if(len%2 == 0) {
-        median = (arrsort[len/2]+arrsort[len/2-1])/2;
+        median = (arrsort[len/2]+arrsort[(len/2)-1])/2;
     } else {
         median = arrsort[(len-1)/2];
     }
