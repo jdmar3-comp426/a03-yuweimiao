@@ -16,9 +16,9 @@
  */
 export const repeat = (fn, n, ...params) => {
     const arrayout = [];
+    var a = fn(params).substring(3,10);
     for(let i = 0; i<n; i++) {
-        var a = fn(params);
-        arrayout[i] = a.substr(3,10);
+        arrayout[i] = a;
     }
     return arrayout;
 };
