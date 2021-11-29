@@ -170,7 +170,16 @@ export const filter = (arr, test) => {
             falsearr[falsearr.length] = "'"+arr[i]+"'";
         }
     }
-    return "{ pass: [ "+truearr+ " ], fail: [ " + falsearr + " ] }";
+    var output = "{ pass: [ ";
+    for(let j = 0; j < truearr.length-1; j++) {
+        output += "'"+truearr[i]+"', ";
+    }
+    output += "'"+truearr[truearr.length-1] +" ], fail: [ ";
+    for(let k = 0; k < falsearr.length-1; k++) {
+        output += "'"+falsearr[i]+"', ";
+    }
+    output += "'"+falsearr+" ] }";
+    return output;
 
 };
 
