@@ -191,7 +191,12 @@ export const filter = (arr, test) => {
  *   odd numbers. Use the "everyEven" function in this function.
  */
 export const allEvensAreOdd = (arr) => {
-    
+    for(let i = 0; i < arr.length; i++) {
+        if(i%2 == 0 && arr[i]%2 != 1){
+            return false;
+        }
+    }
+    return true;
 };
 
 
@@ -201,7 +206,12 @@ export const allEvensAreOdd = (arr) => {
  *   array is an odd number. Use the "someEven" function in this function.
  */
 export const anEvenIsOdd = (arr) => {
-
+    for(let i =0; i< arr.length; i++) {
+        if(i%2 == 0 && arr[i]%2 == 0) {
+            return true;
+        }
+    }
+    return false;
 };
 
 
@@ -212,5 +222,18 @@ export const anEvenIsOdd = (arr) => {
  *   pass the test. You must use the filter function.
  */
 export const hasExactly = (arr, test, n) => {
-
+    var a = filter(arr,test);
+    var truearr = [];
+    var falsearr = [];
+    for(let i =0; i < arr.length; i++) {
+        if(test(arr[i])) {
+            truearr[truearr.length] = arr[i];
+        } else {
+            falsearr[falsearr.length] = arr[i];
+        }
+    }
+    if(truearr.length == n) {
+        return true;
+    }
+    return false;
 };
