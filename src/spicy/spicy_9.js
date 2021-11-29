@@ -48,7 +48,7 @@ export const repeatDemo = () => {
  */
 export const multiplyBy = (num1) => {
     var num2 = 2;
-    return num1*mun2;
+    return num1*num2;
 
 };
 
