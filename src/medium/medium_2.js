@@ -21,7 +21,7 @@ see under the methods section
  */
 export const allCarStats = {
     avgMpg: "{ city: 17.275807722616232, highway: 24.125492513790388 }",
-    allYearStats: "{    length: 5076,     sum: 10207164,     mean: 2010.8676122931442,     median: 2011,     min: 2009,     max: 2012,     variance: 0.6128911467677238,     standard_deviation: 0.7828736467449418  }",
+    allYearStats: getStatistics(),
     //            {%0A    length: 5076,%0A    sum: 10207164,%0A    mean: 2010.8676122931442,%0A    median: 2011,%0A    min: 2009,%0A    max: 2012,%0A    variance: 0.6128911467677238,%0A    standard_deviation: 0.7828736467449418%0A  }
     ratioHybrids: "  ratioHybrids: 0.012411347517730497}",
     //            %0A  ratioHybrids: 0.012411347517730497%0A}
