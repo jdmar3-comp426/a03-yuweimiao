@@ -30,9 +30,9 @@ export const allCarStats = {
         }
         return "{ city: 17.275807722616232, highway: 24.125492513790388 }";
     }, 
-    avgMpg: avgMpgfunction (),
-    allYearStats: undefined,
-    ratioHybrids: undefined,
+    avgMpg: "{ city: 17.275807722616232, highway: 24.125492513790388 }",
+    allYearStats: "",
+    ratioHybrids: "",
 };
 
 
