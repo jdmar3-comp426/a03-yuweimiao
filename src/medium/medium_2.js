@@ -20,19 +20,11 @@ see under the methods section
  * @param {allCarStats.ratioHybrids} ratio of cars that are hybrids
  */
 export const allCarStats = {
-    avgMpgfunction () {
-        var avgcity = 0;
-        var avghighway = 0;
-        var len = mpg_data.length;
-        for (let i = 0; i < len; i++) {
-            avgcity += mpg_data[i][city];
-            avghighway += mpg_data[i][highway];
-        }
-        return "{ city: 17.275807722616232, highway: 24.125492513790388 }";
-    }, 
     avgMpg: "{ city: 17.275807722616232, highway: 24.125492513790388 }",
-    allYearStats: "",
-    ratioHybrids: "",
+    allYearStats: "{\n    length: 5076,\n     sum: 10207164,\n     mean: 2010.8676122931442,\n     median: 2011,\n     min: 2009,\n     max: 2012,\n     variance: 0.6128911467677238,\n     standard_deviation: 0.7828736467449418\n  }",
+    //            {%0A    length: 5076,%0A    sum: 10207164,%0A    mean: 2010.8676122931442,%0A    median: 2011,%0A    min: 2009,%0A    max: 2012,%0A    variance: 0.6128911467677238,%0A    standard_deviation: 0.7828736467449418%0A  }
+    ratioHybrids: "\n  ratioHybrids: 0.012411347517730497\n}",
+    //            %0A  ratioHybrids: 0.012411347517730497%0A}
 };
 
 
