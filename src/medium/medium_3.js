@@ -18,7 +18,13 @@ queries.
  *
  */
 export function searchHighPower(car_data, minHorsepower, minTorque) {
-
+    var ok = [];
+    for(let i = 0; i < car_data.length;i++ ){
+        if(car_data[i]['horsepower']>=minHorsepower && car_data[i]['torque'] >= minTorque) {
+            ok[ok.length] = car_data[i];
+        }
+    }
+    return ok;
 }
 
 
@@ -33,6 +39,13 @@ export function searchHighPower(car_data, minHorsepower, minTorque) {
  *
  */
 export function searchMpg(car_data, minCity, minHighway) {
+    var ok = [];
+    for(let i = 0; i < car_data.length; i++) {
+        if(car_data[i]['highway_mpg'] >= minHighway && car_data[i]['city_mpg'] >= minCity) {
+            ok[ok.length] = car_data[i];
+        }
+    }
+    return ok;
 
 }
 
@@ -46,6 +59,13 @@ export function searchMpg(car_data, minCity, minHighway) {
  * @returns {[]} array of cars
  */
 export function searchName(car_data, searchTerm) {
+    var ok = [];
+    for(let i = 0; i < car_data.length; i++) {
+        if(car_data[i]['id'].includes(searchTerm)) {
+            ok[ok.length] = car_data[i];
+        }
+    }
+    return ok;
 
 }
 
@@ -59,5 +79,15 @@ export function searchName(car_data, searchTerm) {
  * @returns {[]} an array of car objects
  */
 export function searchByYear(car_data, years) {
+    var ok = [];
+    for(let j = 0; j < years.length; j++) {
+        for(let i = 0; i < car_data.length; i++) {
+            if(car_data[i]['year']==years[j]) {
+                ok[ok.length] = car_data[i];
+            }
+        }
+    }
+
+    return ok;
 
 }
